@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.aTascadaESTG.pt/CommonTypes"
+           targetNamespace="http://www.aTascadaESTG.pt/CommonTypes"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="priceType">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+     <xs:simpleType name="unitType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="grams"/>
+            <xs:enumeration value="units"/>
+            <xs:enumeration value="litre"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+
+</xs:schema>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu restaurante="Tasca ESTG"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.aTascadaESTG.pt/Menu" xsi:schemaLocation="http://www.aTascadaESTG.pt/Menu MenuTypes.xsd"
+    xmlns:i="http://www.aTascadaESTG.pt/Ingredient"
+    xmlns:p="http://www.aTascadaESTG.pt/Pizza">
+
+    <pizza codigo="VEP">
+        <p:name>sasd</p:name>
+        <p:ingredients>
+            <p:ingredient>
+                <i:name>Alface</i:name>
+                <i:category>Vegetal</i:category>
+                <i:unit>grams</i:unit>
+                <i:calories>23</i:calories>
+            </p:ingredient>
+        </p:ingredients>
+        <p:price>
+            <p:small>3</p:small>
+            <p:medium>6</p:medium>
+            <p:big>9</p:big>
+        </p:price>
+    </pizza>
+    
+     <pizza codigo="APS">
+        <p:name>sasd</p:name>
+        <p:ingredients>
+            <p:ingredient>
+                <i:name>Tomate</i:name>
+                <i:category>Vegetal</i:category>
+                <i:unit>grams</i:unit>
+                <i:calories>23</i:calories>
+            </p:ingredient>
+        </p:ingredients>
+        <p:price>
+            <p:small>3</p:small>
+            <p:medium>6</p:medium>
+            <p:big>9</p:big>
+        </p:price>
+    </pizza>
+    
+     <pizza codigo="ASA">
+        <p:name>sasd</p:name>
+        <p:ingredients>
+            <p:ingredient>
+                <i:name>Grao</i:name>
+                <i:category>Vegetal</i:category>
+                <i:unit>grams</i:unit>
+                <i:calories>23</i:calories>
+            </p:ingredient>
+        </p:ingredients>
+        <p:price>
+            <p:small>3</p:small>
+            <p:medium>6</p:medium>
+            <p:big>9</p:big>
+        </p:price>
+    </pizza>
+
+</menu>

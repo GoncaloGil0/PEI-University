@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.aTascadaESTG.pt/Ingredient" targetNamespace="http://www.aTascadaESTG.pt/Ingredient"
+    xmlns:c="http://www.aTascadaESTG.pt/CommonTypes" elementFormDefault="qualified">
+
+    <xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.aTascadaESTG.pt/CommonTypes"/>
+
+
+    <xs:simpleType name="categoriesType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Vegetal"/>
+            <xs:enumeration value="Dairy"/>
+            <xs:enumeration value="Sauce"/>
+            <xs:enumeration value="Herb"/>
+            <xs:enumeration value="Meat"/>
+            <xs:enumeration value="Pasta"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="ingredientsType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="category" type="categoriesType"/>
+            <xs:element name="unit" type="c:unitType"/>
+            <xs:element name="calories" type="xs:decimal" />
+        </xs:sequence>
+        <xs:attribute name="type" type="ingredientTypeType"/>
+    </xs:complexType>
+
+    <xs:simpleType name="ingredientTypeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Base"/>
+            <xs:enumeration value="Topping"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

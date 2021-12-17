@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.aTascadaESTG.pt/Pizza"
+           targetNamespace="http://www.aTascadaESTG.pt/Pizza"
+           xmlns:i="http://www.aTascadaESTG.pt/Ingredient"
+           xmlns:c="http://www.aTascadaESTG.pt/CommonTypes"
+           elementFormDefault="qualified">
+
+    <xs:import schemaLocation="IngredientTypes.xsd" namespace="http://www.aTascadaESTG.pt/Ingredient"/>
+    <xs:import schemaLocation="CommonTypes.xsd" namespace="http://www.aTascadaESTG.pt/CommonTypes"/>
+
+    <xs:simpleType name="nameType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="codeType">
+        <xs:restriction base="xs:string">
+            <xs:length value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="pizzaType">
+        <xs:sequence>
+            <xs:element name="name" type="nameType"/>       
+            <xs:element name="ingredients">
+                <xs:complexType>
+                    <xs:sequence>
+                         <xs:element name="ingredient" type="i:ingredientsType" minOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>  
+            <xs:element name="price" type="pizzaPriceType"/>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="codeType" use="required"/>
+    </xs:complexType>
+     
+    <xs:complexType name="pizzaPriceType">
+        <xs:sequence>
+            <xs:element name="small" type="c:priceType"/>
+            <xs:element name="medium" type="c:priceType"/>
+            <xs:element name="big" type="c:priceType"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

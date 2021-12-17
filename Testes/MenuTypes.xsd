@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.aTascadaESTG.pt/Menu"
+           targetNamespace="http://www.aTascadaESTG.pt/Menu"
+           xmlns:p="http://www.aTascadaESTG.pt/Pizza"
+           elementFormDefault="qualified">
+    
+    <xs:import schemaLocation="PizzaTypes.xsd" namespace="http://www.aTascadaESTG.pt/Pizza"/>
+
+    <xs:element name="menu">
+        <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="20">
+                <xs:element name="pizza" type="p:pizzaType"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="restaurante" type="xs:string" use="required" fixed="Tasca ESTG"/>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

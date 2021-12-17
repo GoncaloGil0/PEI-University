@@ -1,0 +1,64 @@
+{
+    "menu": {
+        "0": {
+            "@restaurante": "Tasca ESTG",
+            "@xmlns:xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance",
+            "@xmlns": "http:\/\/www.aTascadaESTG.pt\/Menu",
+            "@xsi:schemaLocation": "http:\/\/www.aTascadaESTG.pt\/Menu MenuTypes.xsd",
+            "@xmlns:i": "http:\/\/www.aTascadaESTG.pt\/Ingredient",
+            "@xmlns:p": "http:\/\/www.aTascadaESTG.pt\/Pizza",
+            "pizza": [{
+                    "@codigo": "VEP",
+                    "p:name": "sasd",
+                    "p:ingredients": {
+                        "p:ingredient": {
+                            "i:name": "Alface",
+                            "i:category": "Vegetal",
+                            "i:unit": "grams",
+                            "i:calories": "23"
+                        }
+                    },
+                    "p:price": {
+                        "p:small": "3",
+                        "p:medium": "6",
+                        "p:big": "9"
+                    }
+                },
+                {
+                    "@codigo": "APS",
+                    "p:name": "sasd",
+                    "p:ingredients": {
+                        "p:ingredient": {
+                            "i:name": "Tomate",
+                            "i:category": "Vegetal",
+                            "i:unit": "grams",
+                            "i:calories": "23"
+                        }
+                    },
+                    "p:price": {
+                        "p:small": "3",
+                        "p:medium": "6",
+                        "p:big": "9"
+                    }
+                },
+                {
+                    "@codigo": "ASA",
+                    "p:name": "sasd",
+                    "p:ingredients": {
+                        "p:ingredient": {
+                            "i:name": "Grao",
+                            "i:category": "Vegetal",
+                            "i:unit": "grams",
+                            "i:calories": "23"
+                        }
+                    },
+                    "p:price": {
+                        "p:small": "3",
+                        "p:medium": "6",
+                        "p:big": "9"
+                    }
+                }
+            ]
+        }
+    }
+}
