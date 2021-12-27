@@ -4,11 +4,11 @@ declare namespace f = 'http://www.oficina.paiNatal.pt/Family';
 
 declare
  %rest:path("/getvisit")
- %rest:query-param("id", "{$id}")
+ %rest:query-param("booking_id", "{$booking_id}")
  %rest:GET
-function page:getVisitFromDatabase($id as xs:string) {
+function page:getVisitFromDatabase($booking_id as xs:string) {
   for $result in db:open("visits")
-  return if ($result//@id = $id) 
+  return if ($result//@id = $booking_id) 
   then $result
 };
 
@@ -31,7 +31,7 @@ function page:addToDatabase($body as item()) {
       let $rand := random:uuid()
       
       return (validate:xsd($body, $xsd),  
-        update:output(<message>O id da sua visita é: {data($rand)}</message>),
+        update:output(<message>Your visit id are: {data($rand)}</message>),
         copy $change := $body
         modify (replace value of node $change//@id with $rand)
         return db:add("visits", $change//family, "Visits.xml"))
@@ -42,10 +42,10 @@ function page:addToDatabase($body as item()) {
 
 declare %updating
  %rest:path("/delvisit")
- %rest:query-param("reserve_id", "{$reserve_id}")
+ %rest:query-param("booking_id", "{$booking_id}")
  %rest:DELETE
-function page:deleteFromDatabase($reserve_id as xs:string) {     
-      for $visits in db:open("Visits")
-      return if ($visits//@id = $reserve_id) then (
-        update:output("a"), replace value of node $visits//@status with "cancel" )
+function page:deleteFromDatabase($booking_id as xs:string) {   
+        for $visits in db:open("Visits")
+      return if ($visits//@id = $booking_id) then (
+        update:output("Booking canceled"), replace value of node $visits//@status with "cancel" )  
 };
