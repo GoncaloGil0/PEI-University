@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.oficina.paiNatal.pt/Members"
+    targetNamespace="http://www.oficina.paiNatal.pt/Members"
+    elementFormDefault="qualified">
+    
+    <xs:complexType name="memberType">
+        <xs:sequence>
+            <xs:element name="nome" type="xs:string"/>
+            <xs:element name="data_nascimento" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

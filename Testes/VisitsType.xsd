@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.oficina.paiNatal.pt/Visits"
+           targetNamespace="http://www.oficina.paiNatal.pt/Visits"
+           xmlns:xf="http://www.oficina.paiNatal.pt/Family"
+           elementFormDefault="qualified">
+
+        <xs:import schemaLocation="Family.xsd" namespace="http://www.oficina.paiNatal.pt/Family"/>
+
+        <xs:element name="visits">
+            <xs:complexType>
+                <xs:sequence maxOccurs="5000">
+                    <xs:element name="family" type="xf:familyType"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+
+</xs:schema>

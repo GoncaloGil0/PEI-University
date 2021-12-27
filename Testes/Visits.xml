@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oficina.paiNatal.pt/Visits" xsi:schemaLocation="http://www.oficina.paiNatal.pt/Visits VisitsType.xsd" xmlns:f="http://www.oficina.paiNatal.pt/Family" xmlns:m="http://www.oficina.paiNatal.pt/Members">
+
+    <family id="f1">
+        <f:number_members>2</f:number_members>
+        <f:member>
+            <m:nome></m:nome>
+            <m:data_nascimento>2021-10-03</m:data_nascimento>
+        </f:member>
+        <f:member>
+            <m:nome></m:nome>
+            <m:data_nascimento>2021-10-03</m:data_nascimento>
+        </f:member>
+        <f:pais></f:pais>
+        <f:cidade></f:cidade>
+        <f:dias_preferencia>
+            <f:day>2021-12-24</f:day>
+        </f:dias_preferencia>
+    </family>
+
+    <family id="f2">
+        <f:number_members>3</f:number_members>
+        <f:member>
+            <m:nome>member1</m:nome>
+            <m:data_nascimento>2021-10-03</m:data_nascimento>
+        </f:member>
+        <f:pais></f:pais>
+        <f:cidade></f:cidade>
+        <f:dias_preferencia>
+            <f:day>2021-09-02</f:day>
+        </f:dias_preferencia>
+    </family>
+
+    <family id="f3">
+        <f:number_members>3</f:number_members>
+        <f:member>
+            <m:nome></m:nome>
+            <m:data_nascimento>2021-10-03</m:data_nascimento>
+        </f:member>
+        <f:pais></f:pais>
+        <f:cidade></f:cidade>
+        <f:dias_preferencia>
+            <f:day>2021-10-21</f:day>
+        </f:dias_preferencia>
+    </family>
+
+    <family id="f4">
+        <f:number_members>3</f:number_members>
+        <f:member>
+            <m:nome></m:nome>
+            <m:data_nascimento>2021-10-03</m:data_nascimento>
+        </f:member>
+        <f:pais></f:pais>
+        <f:cidade></f:cidade>
+        <f:dias_preferencia>
+            <f:day>2021-11-30</f:day>
+        </f:dias_preferencia>
+    </family>
+
+</visits> 
