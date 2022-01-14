@@ -32,9 +32,19 @@ function page:addToDatabase($body as item()) {
       
       return (validate:xsd($body, $xsd),  
         update:output(<message>Your visit id are: {data($rand)}</message>),
-        copy $change := $body
-        modify (replace value of node $change//@id with $rand)
-        return db:add("visits", $change//family, "Visits.xml"))
+        for $day in $body//f:day
+          for $node in db:open("visits")//Q{}day
+            group by $name := $node/text()
+              where ($node = $day)
+                let $num_visits := count($node) div count($body//f:day)
+                return if ($num_visits <= 5) then
+                  copy $change := $body
+                  modify (replace value of node $change//@id with $rand)
+                  return db:add("visits", $change//family, "Visits.xml") 
+                  else
+                      let $warning := concat("O número de visitas máximo para o dia ", data($node/text())[1], " foi atingido, por favor escolha de novo")
+                      return web:error(400, $warning )
+)
   } catch validate:error {
       web:error(400, "O pedido submetido encontra-se mal formatado")
   }
