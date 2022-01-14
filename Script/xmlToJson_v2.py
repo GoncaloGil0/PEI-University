@@ -1,0 +1,22 @@
+import xmltodict, json, sys
+
+def escreverDoc(caminho, savePath="./data.json"):
+    with open(caminho, 'r') as xmlFile:
+        info = xmlFile.read()
+
+    json_object = json.dumps(json.loads(json.dumps(xmltodict.parse(info))),indent=4)
+
+    with open(savePath, "w") as json_file:
+        json_file.write(json_object)
+        json_file.close()
+
+    return f"| XML --> Json \n| Ficheirio guardado com sucesso em: {savePath}"
+
+if len(sys.argv) == 3:
+    docPath, savePath = sys.argv[1], sys.argv[2]
+    print(escreverDoc(docPath, savePath))
+elif len(sys.argv) == 2:
+    docPath = sys.argv[1]
+    print(escreverDoc(docPath))
+else :
+    print(f"+ Instruções + \n| {sys.argv[0]} 'docPath' 'savePath' \n|\n| docPath : diretorio do documento xml \n| savePath: diretorio do documento json (valor por defeito {'./data.json'}) ")

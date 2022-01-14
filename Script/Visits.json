@@ -1,0 +1,69 @@
+{
+    "visits": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xmlns": "http://www.oficina.paiNatal.pt/Visits",
+        "@xsi:schemaLocation": "http://www.oficina.paiNatal.pt/Visits VisitsType.xsd",
+        "@xmlns:f": "http://www.oficina.paiNatal.pt/Family",
+        "@xmlns:m": "http://www.oficina.paiNatal.pt/Members",
+        "family": [
+            {
+                "@id": "f1",
+                "f:number_members": "2",
+                "f:member": [
+                    {
+                        "m:nome": null,
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": null,
+                        "m:data_nascimento": "2021-10-03"
+                    }
+                ],
+                "f:pais": null,
+                "f:cidade": null,
+                "f:dias_preferencia": {
+                    "f:day": "2021-12-24"
+                }
+            },
+            {
+                "@id": "f2",
+                "f:number_members": "3",
+                "f:member": {
+                    "m:nome": "member1",
+                    "m:data_nascimento": "2021-10-03"
+                },
+                "f:pais": null,
+                "f:cidade": null,
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "f3",
+                "f:number_members": "3",
+                "f:member": {
+                    "m:nome": null,
+                    "m:data_nascimento": "2021-10-03"
+                },
+                "f:pais": null,
+                "f:cidade": null,
+                "f:dias_preferencia": {
+                    "f:day": "2021-10-21"
+                }
+            },
+            {
+                "@id": "f4",
+                "f:number_members": "3",
+                "f:member": {
+                    "m:nome": null,
+                    "m:data_nascimento": "2021-10-03"
+                },
+                "f:pais": null,
+                "f:cidade": null,
+                "f:dias_preferencia": {
+                    "f:day": "2021-11-30"
+                }
+            }
+        ]
+    }
+}
