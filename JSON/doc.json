@@ -5,17 +5,15 @@
         "@xsi:schemaLocation": "http://www.oficina.paiNatal.pt/Visits VisitsType.xsd",
         "@xmlns:f": "http://www.oficina.paiNatal.pt/Family",
         "@xmlns:m": "http://www.oficina.paiNatal.pt/Members",
-        "family": [
-            {
+        "family": [{
                 "@id": "578cb18f-9900-4b6d-a8c1-ae3187a8b50c",
                 "f:number_members": "2",
-                "f:member": [
-                    {
+                "f:member": [{
                         "m:nome": "Pedro",
                         "m:data_nascimento": "2021-10-03"
                     },
                     {
-                        "m:nome": "Jo\u00e3o",
+                        "m:nome": "Joao",
                         "m:data_nascimento": "2021-10-03"
                     }
                 ],
@@ -28,8 +26,7 @@
             {
                 "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
                 "f:number_members": "3",
-                "f:member": [
-                    {
+                "f:member": [{
                         "m:nome": "Joana",
                         "m:data_nascimento": "2021-10-03"
                     },
