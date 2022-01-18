@@ -12,11 +12,16 @@ def escreverDoc(caminho, savePath="./data.json"):
 
     return f"| XML --> Json \n| Ficheirio guardado com sucesso em: {savePath}"
 
-if len(sys.argv) == 3:
+def help():
+    return (f"+ Instruções + \n| {sys.argv[0]} 'docPath' 'savePath' \n|\n| docPath : diretorio do documento xml \n| savePath: diretorio do documento json (valor por defeito {'./data.json'}) ")
+
+if sys.argv[1] == "--help":
+    print(help())
+elif len(sys.argv) == 3:
     docPath, savePath = sys.argv[1], sys.argv[2]
     print(escreverDoc(docPath, savePath))
 elif len(sys.argv) == 2:
     docPath = sys.argv[1]
     print(escreverDoc(docPath))
 else :
-    print(f"+ Instruções + \n| {sys.argv[0]} 'docPath' 'savePath' \n|\n| docPath : diretorio do documento xml \n| savePath: diretorio do documento json (valor por defeito {'./data.json'}) ")
+    print(help())

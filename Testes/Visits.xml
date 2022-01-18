@@ -1,60 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <visits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oficina.paiNatal.pt/Visits" xsi:schemaLocation="http://www.oficina.paiNatal.pt/Visits VisitsType.xsd" xmlns:f="http://www.oficina.paiNatal.pt/Family" xmlns:m="http://www.oficina.paiNatal.pt/Members">
 
-    <family id="f1">
+    <family id="578cb18f-9900-4b6d-a8c1-ae3187a8b50c">
         <f:number_members>2</f:number_members>
         <f:member>
-            <m:nome></m:nome>
+            <m:nome>Pedro</m:nome>
             <m:data_nascimento>2021-10-03</m:data_nascimento>
         </f:member>
         <f:member>
-            <m:nome></m:nome>
+            <m:nome>João</m:nome>
             <m:data_nascimento>2021-10-03</m:data_nascimento>
         </f:member>
-        <f:pais></f:pais>
-        <f:cidade></f:cidade>
+        <f:pais>Portugal</f:pais>
+        <f:cidade>Lisboa</f:cidade>
         <f:dias_preferencia>
             <f:day>2021-12-24</f:day>
         </f:dias_preferencia>
     </family>
 
-    <family id="f2">
+    <family id="5931b18f-9900-4b6d-a7c1-ae3187a8b50c">
         <f:number_members>3</f:number_members>
         <f:member>
-            <m:nome>member1</m:nome>
+            <m:nome>Joana</m:nome>
             <m:data_nascimento>2021-10-03</m:data_nascimento>
         </f:member>
-        <f:pais></f:pais>
-        <f:cidade></f:cidade>
+        <f:member>
+            <m:nome>Rita</m:nome>
+            <m:data_nascimento>2011-10-03</m:data_nascimento>
+        </f:member>
+        <f:member>
+            <m:nome>Paulo</m:nome>
+            <m:data_nascimento>2010-10-03</m:data_nascimento>
+        </f:member>
+        <f:pais>Espanha</f:pais>
+        <f:cidade>Madrid</f:cidade>
         <f:dias_preferencia>
             <f:day>2021-09-02</f:day>
         </f:dias_preferencia>
     </family>
-
-    <family id="f3">
-        <f:number_members>3</f:number_members>
-        <f:member>
-            <m:nome></m:nome>
-            <m:data_nascimento>2021-10-03</m:data_nascimento>
-        </f:member>
-        <f:pais></f:pais>
-        <f:cidade></f:cidade>
-        <f:dias_preferencia>
-            <f:day>2021-10-21</f:day>
-        </f:dias_preferencia>
-    </family>
-
-    <family id="f4">
-        <f:number_members>3</f:number_members>
-        <f:member>
-            <m:nome></m:nome>
-            <m:data_nascimento>2021-10-03</m:data_nascimento>
-        </f:member>
-        <f:pais></f:pais>
-        <f:cidade></f:cidade>
-        <f:dias_preferencia>
-            <f:day>2021-11-30</f:day>
-        </f:dias_preferencia>
-    </family>
-
 </visits> 

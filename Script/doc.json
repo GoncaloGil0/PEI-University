@@ -1,0 +1,53 @@
+{
+    "visits": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xmlns": "http://www.oficina.paiNatal.pt/Visits",
+        "@xsi:schemaLocation": "http://www.oficina.paiNatal.pt/Visits VisitsType.xsd",
+        "@xmlns:f": "http://www.oficina.paiNatal.pt/Family",
+        "@xmlns:m": "http://www.oficina.paiNatal.pt/Members",
+        "family": [
+            {
+                "@id": "578cb18f-9900-4b6d-a8c1-ae3187a8b50c",
+                "f:number_members": "2",
+                "f:member": [
+                    {
+                        "m:nome": "Pedro",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Jo\u00e3o",
+                        "m:data_nascimento": "2021-10-03"
+                    }
+                ],
+                "f:pais": "Portugal",
+                "f:cidade": "Lisboa",
+                "f:dias_preferencia": {
+                    "f:day": "2021-12-24"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "f:number_members": "3",
+                "f:member": [
+                    {
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Espanha",
+                "f:cidade": "Madrid",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            }
+        ]
+    }
+}
