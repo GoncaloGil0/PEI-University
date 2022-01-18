@@ -31,7 +31,7 @@ function page:addToDatabase($body as item()) {
       let $rand := random:uuid()
       
       return (validate:xsd($body, $xsd),  
-        update:output(<message>Your visit id are: {data($rand)}</message>),
+        update:output(<message>Your visit id are: {data(concat('f',$rand))}</message>),
         for $day in $body//f:day
           for $node in db:open("visits")//Q{}day
             group by $name := $node/text()
@@ -39,7 +39,7 @@ function page:addToDatabase($body as item()) {
                 let $num_visits := count($node) div count($body//f:day)
                 return if ($num_visits <= 5) then
                   copy $change := $body
-                  modify (replace value of node $change//@id with $rand)
+                  modify (replace value of node $change//@id with concat('f',$rand))
                   return db:add("visits", $change//family, "Visits.xml") 
                   else
                       let $warning := concat("O número de visitas máximo para o dia ", data($node/text())[1], " foi atingido, por favor escolha de novo")
