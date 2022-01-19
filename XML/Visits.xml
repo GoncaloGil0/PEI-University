@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <visits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oficina.paiNatal.pt/Visits" xsi:schemaLocation="http://www.oficina.paiNatal.pt/Visits VisitsType.xsd" xmlns:f="http://www.oficina.paiNatal.pt/Family" xmlns:m="http://www.oficina.paiNatal.pt/Members">
 
-    <family id="578cb18f-9900-4b6d-a8c1-ae3187a8b50c" status="active">
+    <family id="f57cb18f-9900-4b6d-a8c1-ae3187a8b50c" status="active">
         <f:number_members>2</f:number_members>
         <f:member>
-            <m:nome>Pedro</m:nome>
+            <m:nome>JACAESTOU</m:nome>
             <m:data_nascimento>2021-10-03</m:data_nascimento>
         </f:member>
         <f:member>
@@ -18,7 +18,7 @@
         </f:dias_preferencia>
     </family>
 
-    <family id="5931b18f-9900-4b6d-a7c1-ae3187a8b50c" status="active">
+    <family id="f931b18f-9900-4b6d-a7c1-ae3187a8b50c" status="active">
         <f:number_members>3</f:number_members>
         <f:member>
             <m:nome>Joana</m:nome>
