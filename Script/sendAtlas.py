@@ -29,3 +29,6 @@ def send(path="./data.json"):
     
     os.system(cmd)
     file.close()
+
+    print(f"| JSON --> Atlas \
+        \n| Ficheirio enviado com sucesso para: {clusterName}")

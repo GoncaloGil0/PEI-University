@@ -10,7 +10,7 @@ def escreverDoc(caminho, savePath="./data.json"):
         json_file.write(json_object)
         json_file.close()
 
-    print(f"| XML --> Json \
+    print(f"| XML --> JSON \
         \n| Ficheirio guardado com sucesso em: {savePath}")
 
     sendAtlas.send(savePath)
@@ -19,8 +19,8 @@ def help():
     return (f"+ Instruções + \
         \n| {sys.argv[0]} 'docPath' 'savePath' \
         \n|\
-        \n| docPath : diretorio do documento xml \
-        \n| savePath: diretorio do documento json (valor por defeito {'./data.json'}) ")
+        \n| docPath : diretorio do documento XML \
+        \n| savePath: diretorio do documento JSON (valor por defeito {'./data.json'}) ")
 
 if sys.argv[1] == "--help":
     print(help())
