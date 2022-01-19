@@ -5,12 +5,10 @@
         "@xsi:schemaLocation": "http://www.oficina.paiNatal.pt/Visits VisitsType.xsd",
         "@xmlns:f": "http://www.oficina.paiNatal.pt/Family",
         "@xmlns:m": "http://www.oficina.paiNatal.pt/Members",
-        "family": [
-            {
+        "family": [{
                 "@id": "f1",
                 "f:number_members": "2",
-                "f:member": [
-                    {
+                "f:member": [{
                         "m:nome": null,
                         "m:data_nascimento": "2021-10-03"
                     },
