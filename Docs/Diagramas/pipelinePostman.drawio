@@ -1,51 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2022-01-19T13:03:27.642Z" agent="5.0 (X11)" etag="GBDJWQ53z3eVjDdS8Di9" version="16.4.0" type="github">
-  <diagram id="-tL2dxSermiO2GCtUW-l" name="Page-1">
-    <mxGraphModel dx="1422" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mlxFdBeC_WjJf-EC-HlV-1" target="mlxFdBeC_WjJf-EC-HlV-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="95" y="440" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-1" value="&lt;div&gt;POST:&lt;/div&gt;&lt;div&gt; Add Visits&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="35" y="340" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mlxFdBeC_WjJf-EC-HlV-2" target="mlxFdBeC_WjJf-EC-HlV-14">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="632" y="440" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-2" value="POST: EnviarJsonAtlas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="572" y="340" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mlxFdBeC_WjJf-EC-HlV-4" target="mlxFdBeC_WjJf-EC-HlV-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-4" value="Tests (1)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="115" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mlxFdBeC_WjJf-EC-HlV-6" target="mlxFdBeC_WjJf-EC-HlV-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-6" value="Faz a passagem de XML para Json  (2)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="215" y="480" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mlxFdBeC_WjJf-EC-HlV-8" target="mlxFdBeC_WjJf-EC-HlV-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-8" value="Guarda o Objeto Json como uma variável global (jsonData)  (3)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="375" y="480" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="mlxFdBeC_WjJf-EC-HlV-14" value="Envia para o cluster o objeto jsonData  (4)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="672" y="410" width="120" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="-tL2dxSermiO2GCtUW-l" name="Page-1">
+        <mxGraphModel dx="808" dy="609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-1" value="&lt;div&gt;POST:&lt;/div&gt;&lt;div&gt;/addvisit&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="115" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="mlxFdBeC_WjJf-EC-HlV-2" target="mlxFdBeC_WjJf-EC-HlV-14" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="632" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-2" value="POST: EnviarJsonAtlas" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="572" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="mlxFdBeC_WjJf-EC-HlV-4" target="mlxFdBeC_WjJf-EC-HlV-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-4" value="Tests (1)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;gradientColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="115" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mlxFdBeC_WjJf-EC-HlV-6" target="mlxFdBeC_WjJf-EC-HlV-8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-6" value="Faz a passagem de XML para Json" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="215" y="480" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="mlxFdBeC_WjJf-EC-HlV-8" target="mlxFdBeC_WjJf-EC-HlV-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-8" value="Guarda o Objeto Json como uma variável global (jsonData)" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="375" y="480" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mlxFdBeC_WjJf-EC-HlV-14" value="Envia para o cluster o objeto jsonData  (2)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="672" y="410" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;div&gt;GET:&lt;/div&gt;&lt;div&gt; /getvisits&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="115" y="270" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="95" y="440"/>
+                        </Array>
+                        <mxPoint x="115" y="370" as="sourcePoint"/>
+                        <mxPoint x="115" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="115" y="300"/>
+                            <mxPoint x="95" y="300"/>
+                            <mxPoint x="95" y="440"/>
+                        </Array>
+                        <mxPoint x="115" y="300" as="sourcePoint"/>
+                        <mxPoint x="115" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
