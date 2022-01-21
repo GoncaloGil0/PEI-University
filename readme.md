@@ -17,5 +17,5 @@ Ano letivo 2021/2022
 
 ## Clonar o repositorio
 ``` 
-git clone https://github.com/GoncaloGil0/ProjetoSO.git
+git clone https://github.com/GoncaloGil0/BaseXtoMongoDB.git
 ```
