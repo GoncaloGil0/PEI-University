@@ -6,25 +6,8 @@
         "@xmlns:f": "http://www.oficina.paiNatal.pt/Family",
         "@xmlns:m": "http://www.oficina.paiNatal.pt/Members",
         "family": [{
-                "@id": "578cb18f-9900-4b6d-a8c1-ae3187a8b50c",
-                "f:number_members": "2",
-                "f:member": [{
-                        "m:nome": "Pedro",
-                        "m:data_nascimento": "2021-10-03"
-                    },
-                    {
-                        "m:nome": "Joao",
-                        "m:data_nascimento": "2021-10-03"
-                    }
-                ],
-                "f:pais": "Portugal",
-                "f:cidade": "Lisboa",
-                "f:dias_preferencia": {
-                    "f:day": "2021-12-24"
-                }
-            },
-            {
                 "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
                 "f:number_members": "3",
                 "f:member": [{
                         "m:nome": "Joana",
@@ -39,8 +22,169 @@
                         "m:data_nascimento": "2010-10-03"
                     }
                 ],
-                "f:pais": "Espanha",
-                "f:cidade": "Madrid",
+                "f:pais": "France",
+                "f:cidade": "Paris",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Italy",
+                "f:cidade": "Rome",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Greece",
+                "f:cidade": "Atenas",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Italy",
+                "f:cidade": "Rome",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Greece",
+                "f:cidade": "Atenas",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Russia",
+                "f:cidade": "moscovo",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Russia",
+                "f:cidade": "moscovo",
+                "f:dias_preferencia": {
+                    "f:day": "2021-09-02"
+                }
+            },
+            {
+                "@id": "5931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03"
+                    }
+                ],
+                "f:pais": "Sweden",
+                "f:cidade": "Stockholm",
                 "f:dias_preferencia": {
                     "f:day": "2021-09-02"
                 }
