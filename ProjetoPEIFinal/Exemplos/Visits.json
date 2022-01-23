@@ -1,0 +1,197 @@
+{
+    "visits": {
+        "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "@xmlns": "http://www.oficina.paiNatal.pt/Visits",
+        "@xsi:schemaLocation": "http://www.oficina.paiNatal.pt/Visits VisitsType.xsd",
+        "@xmlns:f": "http://www.oficina.paiNatal.pt/Family",
+        "@xmlns:m": "http://www.oficina.paiNatal.pt/Members",
+        "family": [{
+                "@id": "f57cb18f-9900-4b6d-a8c1-ae3187a8b50c",
+                "@status": "active",
+                "f:number_members": "2",
+                "f:member": [{
+                        "m:nome": "JACAESTOU",
+                        "m:data_nascimento": "2021-10-03",
+                        "m:idade": "1"
+                    },
+                    {
+                        "m:nome": "João",
+                        "m:data_nascimento": "2021-10-03",
+                        "m:idade": "1"
+                    }
+                ],
+                "f:pais": "Portugal",
+                "f:cidade": "Lisboa",
+                "f:dias_preferencia": "2021-12-24"
+            },
+            {
+                "@id": "f931b18f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "active",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2021-10-03",
+                        "m:idade": "1"
+                    },
+                    {
+                        "m:nome": "Rita",
+                        "m:data_nascimento": "2011-10-03",
+                        "m:idade": "10"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "2010-10-03",
+                        "m:idade": "11"
+                    }
+                ],
+                "f:pais": "Spain",
+                "f:cidade": "Madrid",
+                "f:dias_preferencia": "2021-11-24"
+            },
+            {
+                "@id": "f931b34f-9900-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Antonieta",
+                        "m:data_nascimento": "2004-10-03",
+                        "m:idade": "17"
+                    },
+                    {
+                        "m:nome": "Joana",
+                        "m:data_nascimento": "2006-10-03",
+                        "m:idade": "15"
+                    },
+                    {
+                        "m:nome": "Paulo",
+                        "m:data_nascimento": "1999-10-03",
+                        "m:idade": "22"
+                    }
+                ],
+                "f:pais": "Spain",
+                "f:cidade": "Madrid",
+                "f:dias_preferencia": "2021-12-22"
+            },
+            {
+                "@id": "f931b18f-9911-4b6d-a7c1-ae3187a8b50c",
+                "@status": "active",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Pedro",
+                        "m:data_nascimento": "2001-10-03",
+                        "m:idade": "20"
+                    },
+                    {
+                        "m:nome": "Teresa",
+                        "m:data_nascimento": "2011-10-03",
+                        "m:idade": "10"
+                    },
+                    {
+                        "m:nome": "Joni",
+                        "m:data_nascimento": "2000-10-03",
+                        "m:idade": "21"
+                    }
+                ],
+                "f:pais": "Portugal",
+                "f:cidade": "Porto",
+                "f:dias_preferencia": "2021-12-02"
+            },
+            {
+                "@id": "f932318f-9900-4b6d-a7c1-ae3189j8b50c",
+                "@status": "active",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Zeca",
+                        "m:data_nascimento": "1995-10-03",
+                        "m:idade": "26"
+                    },
+                    {
+                        "m:nome": "Kiko",
+                        "m:data_nascimento": "1967-10-03",
+                        "m:idade": "24"
+                    },
+                    {
+                        "m:nome": "Matilde",
+                        "m:data_nascimento": "2015-10-03",
+                        "m:idade": "6"
+                    }
+                ],
+                "f:pais": "France",
+                "f:cidade": "Paris",
+                "f:dias_preferencia": "2021-12-02"
+            },
+            {
+                "@id": "f931b18f-9922-4b6d-a7c1-ae3187a8b50c",
+                "@status": "canceled",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "jim",
+                        "m:data_nascimento": "1985-10-03",
+                        "m:idade": "36"
+                    },
+                    {
+                        "m:nome": "kiro",
+                        "m:data_nascimento": "2016-10-03",
+                        "m:idade": "5"
+                    },
+                    {
+                        "m:nome": "mafi",
+                        "m:data_nascimento": "2001-10-03",
+                        "m:idade": "20"
+                    }
+                ],
+                "f:pais": "Italy",
+                "f:cidade": "Rome",
+                "f:dias_preferencia": "2021-09-02"
+            },
+            {
+                "@id": "f931b18f-9910-4b6d-a7c1-ae3187a8b50c",
+                "@status": "active",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Luis",
+                        "m:data_nascimento": "2004-10-03",
+                        "m:idade": "17"
+                    },
+                    {
+                        "m:nome": "Costa",
+                        "m:data_nascimento": "2006-10-03",
+                        "m:idade": "15"
+                    },
+                    {
+                        "m:nome": "Miguel",
+                        "m:data_nascimento": "1994-10-03",
+                        "m:idade": "27"
+                    }
+                ],
+                "f:pais": "Greece",
+                "f:cidade": "Atenas",
+                "f:dias_preferencia": "2021-09-02"
+            },
+            {
+                "@id": "f931b18f-9100-4b6d-a7c1-ae3187a5460c",
+                "@status": "active",
+                "f:number_members": "3",
+                "f:member": [{
+                        "m:nome": "Catia",
+                        "m:data_nascimento": "2005-10-03",
+                        "m:idade": "16"
+                    },
+                    {
+                        "m:nome": "Vania",
+                        "m:data_nascimento": "1986-10-03",
+                        "m:idade": "35"
+                    },
+                    {
+                        "m:nome": "Rebeca",
+                        "m:data_nascimento": "1974-10-03",
+                        "m:idade": "47"
+                    }
+                ],
+                "f:pais": "Espanha",
+                "f:cidade": "Madrid",
+                "f:dias_preferencia": "2021-09-02"
+            }
+        ]
+    }
+}

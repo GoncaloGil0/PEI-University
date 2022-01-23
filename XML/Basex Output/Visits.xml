@@ -1,0 +1,164 @@
+<family id="f57cb18f-9900-4b6d-a8c1-ae3187a8b50c" status="active">
+  <f:number_members>2</f:number_members>
+  <f:member>
+    <m:nome>JACAESTOU</m:nome>
+    <m:data_nascimento>2021-10-03</m:data_nascimento>
+    <m:idade>1</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>João</m:nome>
+    <m:data_nascimento>2021-10-03</m:data_nascimento>
+    <m:idade>1</m:idade>
+  </f:member>
+  <f:pais>Portugal</f:pais>
+  <f:cidade>Lisboa</f:cidade>
+  <f:dias_preferencia>2021-12-24</f:dias_preferencia>
+</family>
+<family id="f931b18f-9900-4b6d-a7c1-ae3187a8b50c" status="active">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>Joana</m:nome>
+    <m:data_nascimento>2021-10-03</m:data_nascimento>
+    <m:idade>1</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Rita</m:nome>
+    <m:data_nascimento>2011-10-03</m:data_nascimento>
+    <m:idade>10</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Paulo</m:nome>
+    <m:data_nascimento>2010-10-03</m:data_nascimento>
+    <m:idade>11</m:idade>
+  </f:member>
+  <f:pais>Spain</f:pais>
+  <f:cidade>Madrid</f:cidade>
+  <f:dias_preferencia>2021-11-24</f:dias_preferencia>
+</family>
+<family id="f931b34f-9900-4b6d-a7c1-ae3187a8b50c" status="canceled">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>Antonieta</m:nome>
+    <m:data_nascimento>2004-10-03</m:data_nascimento>
+    <m:idade>17</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Joana</m:nome>
+    <m:data_nascimento>2006-10-03</m:data_nascimento>
+    <m:idade>15</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Paulo</m:nome>
+    <m:data_nascimento>1999-10-03</m:data_nascimento>
+    <m:idade>22</m:idade>
+  </f:member>
+  <f:pais>Spain</f:pais>
+  <f:cidade>Madrid</f:cidade>
+  <f:dias_preferencia>2021-12-22</f:dias_preferencia>
+</family>
+<family id="f931b18f-9911-4b6d-a7c1-ae3187a8b50c" status="active">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>Pedro</m:nome>
+    <m:data_nascimento>2001-10-03</m:data_nascimento>
+    <m:idade>20</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Teresa</m:nome>
+    <m:data_nascimento>2011-10-03</m:data_nascimento>
+    <m:idade>10</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Joni</m:nome>
+    <m:data_nascimento>2000-10-03</m:data_nascimento>
+    <m:idade>21</m:idade>
+  </f:member>
+  <f:pais>Portugal</f:pais>
+  <f:cidade>Porto</f:cidade>
+  <f:dias_preferencia>2021-12-02</f:dias_preferencia>
+</family>
+<family id="f932318f-9900-4b6d-a7c1-ae3189j8b50c" status="active">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>Zeca</m:nome>
+    <m:data_nascimento>1995-10-03</m:data_nascimento>
+    <m:idade>26</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Kiko</m:nome>
+    <m:data_nascimento>1967-10-03</m:data_nascimento>
+    <m:idade>24</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Matilde</m:nome>
+    <m:data_nascimento>2015-10-03</m:data_nascimento>
+    <m:idade>6</m:idade>
+  </f:member>
+  <f:pais>France</f:pais>
+  <f:cidade>Paris</f:cidade>
+  <f:dias_preferencia>2021-12-02</f:dias_preferencia>
+</family>
+<family id="f931b18f-9922-4b6d-a7c1-ae3187a8b50c" status="canceled">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>jim</m:nome>
+    <m:data_nascimento>1985-10-03</m:data_nascimento>
+    <m:idade>36</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>kiro</m:nome>
+    <m:data_nascimento>2016-10-03</m:data_nascimento>
+    <m:idade>5</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>mafi</m:nome>
+    <m:data_nascimento>2001-10-03</m:data_nascimento>
+    <m:idade>20</m:idade>
+  </f:member>
+  <f:pais>Italy</f:pais>
+  <f:cidade>Rome</f:cidade>
+  <f:dias_preferencia>2021-09-02</f:dias_preferencia>
+</family>
+<family id="f931b18f-9910-4b6d-a7c1-ae3187a8b50c" status="active">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>Luis</m:nome>
+    <m:data_nascimento>2004-10-03</m:data_nascimento>
+    <m:idade>17</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Costa</m:nome>
+    <m:data_nascimento>2006-10-03</m:data_nascimento>
+    <m:idade>15</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Miguel</m:nome>
+    <m:data_nascimento>1994-10-03</m:data_nascimento>
+    <m:idade>27</m:idade>
+  </f:member>
+  <f:pais>Greece</f:pais>
+  <f:cidade>Atenas</f:cidade>
+  <f:dias_preferencia>2021-09-02</f:dias_preferencia>
+</family>
+<family id="f931b18f-9100-4b6d-a7c1-ae3187a5460c" status="active">
+  <f:number_members>3</f:number_members>
+  <f:member>
+    <m:nome>Catia</m:nome>
+    <m:data_nascimento>2005-10-03</m:data_nascimento>
+    <m:idade>16</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Vania</m:nome>
+    <m:data_nascimento>1986-10-03</m:data_nascimento>
+    <m:idade>35</m:idade>
+  </f:member>
+  <f:member>
+    <m:nome>Rebeca</m:nome>
+    <m:data_nascimento>1974-10-03</m:data_nascimento>
+    <m:idade>47</m:idade>
+  </f:member>
+  <f:pais>Espanha</f:pais>
+  <f:cidade>Madrid</f:cidade>
+  <f:dias_preferencia>2021-09-02</f:dias_preferencia>
+</family>
+</visits>

@@ -6,7 +6,7 @@ declare function page:checkDate($date as xs:string){
 for $item in db:open("Visits")//Q{}dias_preferencia
    group by $d:= $item
    where $item = $date 
-   return if (count($item) < 3) then (<data>{$date}</data>) else(<message>This day is complete</message>)
+   return if (count($item) < 50) then (<data>{$date}</data>) else(<message>This day is complete</message>)
 };
 
 declare function page:treatArray($body as item()*){

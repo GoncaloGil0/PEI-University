@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+        xmlns="http://www.oficina.paiNatal.pt/Family" 
+        targetNamespace="http://www.oficina.paiNatal.pt/Family" 
+        xmlns:xm="http://www.oficina.paiNatal.pt/Members" 
+        elementFormDefault="qualified">
+
+    <xs:import schemaLocation="Members.xsd" namespace="http://www.oficina.paiNatal.pt/Members" />
+
+    <xs:complexType name="familyType">
+        <xs:sequence minOccurs="1" maxOccurs="7">
+            <xs:element name="number_members" type="numberType" />
+            <xs:element name="member" type="xm:memberType" maxOccurs="7"/>
+            <xs:element name="pais" type="xs:string"/>
+            <xs:element name="cidade" type="xs:string"/>
+            <xs:element name="dias_preferencia" type="preferencesType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required" />
+        <xs:attribute name="status" type="xs:string" default="active" />
+    </xs:complexType>
+
+    <xs:complexType name="preferencesType">
+        <xs:sequence maxOccurs="5">
+            <xs:element name="day" type="dayType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="dayType">
+        <xs:restriction base="xs:date">
+            <xs:minInclusive value="2021-08-15"></xs:minInclusive> 
+            <xs:maxInclusive value="2021-12-25"></xs:maxInclusive> 
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="numberType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="[1-7]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
