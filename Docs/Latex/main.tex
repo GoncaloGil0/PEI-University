@@ -20,7 +20,7 @@
                 shapes,positioning}
 \renewcommand\maketitlehooka{\null\mbox{}\vfill}
 \renewcommand\maketitlehookd{\vfill\null}
-
+\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{multicol}
@@ -99,24 +99,26 @@
 \section{Índice}
 
 \begin{itemize}
-    \item Introdução
-        \subitem Contextualização \hspace*{\fill} 2
-        \subitem Objetivos do trabalho \hspace*{\fill} 2
-        \subitem Breve descrição do trabalho \hspace*{\fill} 2
-    \item XML Schema
-        \subitem Propriedades   \hspace*{\fill} 3
-            \subsubitem Elementos desenvolvidos   \hspace*{\fill} 3
-            \subsubitem Atributos   \hspace*{\fill} 4
-            \subsubitem Restrições   \hspace*{\fill} 4
-            \subsubitem Namespaces   \hspace*{\fill} 4
-    \item REST API \hspace*{\fill} 5
-    \item XML to JSON \hspace*{\fill} 5
-        \subitem Postman   \hspace*{\fill} 6
-        \subitem Script em Python   \hspace*{\fill} 6
-    \item Consultas MongoDB \hspace*{\fill} 7  
-    \item Análise crítica \hspace*{\fill} 8
-    \item Conclusão \hspace*{\fill} 9
-    \item Bibliografia\hspace*{\fill} 9
+    \item 2. Introdução
+        \subitem 2.1 Contextualização \hspace*{\fill} 2
+        \subitem 2.2 Objetivos do trabalho \hspace*{\fill} 2
+        \subitem 2.3 Breve descrição do trabalho \hspace*{\fill} 2
+    \item 3. XML Schema
+        \subitem 3.1 Propriedades   \hspace*{\fill} 3
+            \subsubitem 3.1.1 Elementos desenvolvidos   \hspace*{\fill} 3
+            \subsubitem 3.1.2 Atributos   \hspace*{\fill} 4
+            \subsubitem 3.1.3 Restrições   \hspace*{\fill} 4
+            \subsubitem 3.1.4 Namespaces   \hspace*{\fill} 4
+    \item 4. REST API \hspace*{\fill} 5
+    \item 5 XML to JSON \hspace*{\fill} 5
+        \subitem 5.1 Postman   \hspace*{\fill} 6
+        \subitem 5.2 Script em Python   \hspace*{\fill} 6
+    \item 6. Consultas MongoDB \hspace*{\fill} 7 
+    \item 7. Dashboard Atlas \hspace*{\fill} 7
+    \item 8. Análise crítica \hspace*{\fill} 8
+    \item 9. Conclusão \hspace*{\fill} 9
+    \item 10. Anexos \hspace*{\fill} 9
+    \item 11. Bibliografia\hspace*{\fill} 9
 \end{itemize} 
 
 \newpage
@@ -129,14 +131,14 @@
 
 \subsection{Breve descrição do trabalho}
 \hspace{0.5cm}O grupo organizou o trabalho em duas etapas.\par
-Numa primeira instância, realizaram-se todos os vocabulários necessários para satisfazer os objetivos do trabalho, de forma a ser possível fazer a validação dos dados antes de serem adicionados na base de dados, e foi efetuada a REST API. \par
+Numa primeira instância, realizaram-se todos os vocabulários necessários para satisfazer os objetivos do trabalho, de forma a ser possível fazer a validação dos dados antes de serem adicionados na base de dados, e foi efectuada a REST API. \par
 Numa segunda etapa, criou-se um script que faz a passagem de documentos XML para documentos JSON e, com esses documentos, foram executadas as querys necessárias para processar toda a informação recebida (algumas foram representadas em forma de gráficos usando o Atlas).  \par
 
 \newpage
 \section{XML Schema}
 \subsection{Propriedades}
-\hspace{0.5cm} Para a concretização do presente projeto, foi indispensável a criação de um XML Schema que cumprisse com os requisitos e objetivos do trabalho, permitindo receber os valores necessários e executar a validação dos mesmos. \par
-Este documento é constituído por elementos e os seus atributos, namespaces e restrições. Nos próximos tópicos vão ser descritos e exemplificados todos estes fatores importantes na realização do XML Schema. 
+\hspace{0.5cm} Para a concretização do presente projeto, foi indispensável a criação de um XML Schema que cumprisse com os requisitos e objectivos do trabalho, permitindo receber os valores necessários e executar a validação dos mesmos. \par
+Este documento é constituído por elementos e os seus atributos, namespaces e restrições. Nos próximos tópicos vão ser descritos e exemplificados todos estes factores importantes na realização do XML Schema. 
 
 \subsubsection{Elementos  desenvolvidos}
 \begin{itemize}
@@ -339,25 +341,34 @@ $ db.visits.find().count()
 \end{lstlisting}
     \item Apresentar o total de famílias por dia
 \begin{lstlisting}[language=XML, caption=]
-$ db.visits.aggregate([{"$match":{"f:dias_preferencia.f:day":"2021-12-24"}},{"$count":"2021-12-24"}]).pretty() 
+$ db.visits.aggregate([{"$match":{"f:dias_preferencia":"2021-12-24"}},{"$count":"2021-12-24"}]).pretty() 
 \end{lstlisting}
     \item Apresentar o total de pessoas por dia
 \begin{lstlisting}[language=XML, caption=]
-$ db.visits.aggregate([{"$match":{"f:dias_preferencia.f:day":"2021-09-02"}},{ "$group":{"_id":"$f:dias_preferencia.f:day", "total_pessoas":{"$sum":{$toInt: "$f:number_members"}}}}])
+$ db.visits.aggregate([{"$match":{"f:dias_preferencia":"2021-09-02"}},{ "$group":{"_id":"$f:dias_preferencia", "total_pessoas":{"$sum":{$toInt: "$f:number_members"}}}}])
 \end{lstlisting}
     \item A percentagem de ocupação por dia
 \begin{lstlisting}[language=XML, caption=]
-$ db.visits.aggregate([{"$match":{"f:dias_preferencia.f:day":"2021-12-24"}},{ "$group":{"_id":"$f:dias_preferencia.f:day", "total_pessoas":{"$sum":{$toInt: "$f:number_members"}}}},{"$project":{"_id":0,"total_pessoas": 1, "percentagem_ocup":{$divide:[{ $multiply: [ "$total_pessoas", 100]},50]}}}])
+$ db.visits.aggregate([{"$match":{"f:dias_preferencia":"2021-12-24"}},{ "$group":{"_id":"$f:dias_preferencia", "total_pessoas":{"$sum":{$toInt: "$f:number_members"}}}},{"$project":{"_id":0,"total_pessoas": 1, "percentagem_ocup":{$divide:[{ $multiply: [ "$total_pessoas", 100]},50]}}}])
 \end{lstlisting}
     \item O número de cancelamentos por dia
 \begin{lstlisting}[language=XML, caption=]
-$ db.visits.aggregate([{"$match":{"@status":"cancel","f:dias_preferencia.f:day":"2021-12-24"}},{"$count":"cancelados"}])
+$ db.visits.aggregate([{"$match":{"@status":"cancel","f:dias_preferencia":"2021-12-24"}},{"$count":"cancelados"}])
 \end{lstlisting}
     \item Por cidade e por país, apresentar o número de agendamentos
 \begin{lstlisting}[language=XML, caption=]
 $ db.visits.aggregate([{"$match":{"f:pais":"Portugal","f:cidade":"Lisboa"}},{"$count":"family"}]).pretty()
 \end{lstlisting}
 \end{itemize}
+
+\section{Dashboard Atlas}
+
+Por fim, tal como se pode ver na figura a baixo, foi realizado um dashboard com os gráficos pedidos no enunciado do projeto. Este tambem pode ser acessado pelo seguinte URL \href{https://charts.mongodb.com/charts-pei-rpoxp/public/dashboards/f146621d-6895-4e8d-899d-b7a0a87c402c}{atlas dashBoard}. \par
+
+\begin{center}
+    \includegraphics[scale=0.52]{Images/Dashboard.PNG}
+\end{center}
+
 
 \newpage
 \section{Análise crítica}
@@ -378,11 +389,26 @@ O grupo teve a oportunidade de estudar aprofundadamente um ambiente mais prátic
 Podemos certamente afirmar que todo o trabalho e dedicação empregues neste projeto foram altamente enriquecedores em inúmeras áreas, desde o trabalho em equipa, à escrita de um relatório técnico, até ao estudo autónomo por parte dos elementos do grupo. \par
 Por fim, é seguro afirmar que acabamos este projeto mais enriquecidos e preparados para o restante percurso académico e mundo profissional. \par
 
+\section{Anexos}
+\begin{itemize}
+    \item Pasta Exemplos
+        \subitem - Visits.xml 
+        \subitem - Visits.json 
+    \item Pasta API&XSD
+        \subitem - Family.xsd
+        \subitem - Members.xsd
+        \subitem - visits.xqm
+        \subitem - VisitsType.xsd
+    \item Pasta Script
+        \subitem - sendAtlas.py
+        \subitem - xmlToJson.py
+\end{itemize}
+
 \section{Bibliografia}
 \begin{itemize}
-    \item https://docs.basex.org/wiki/Main\_Page
-    \item https://docs.basex.org/wiki/REST
-    \item https://docs.mongodb.com/
+    \item \url{https://docs.basex.org/wiki/Main_Page}
+    \item \url{https://docs.basex.org/wiki/REST}
+    \item \url{https://docs.mongodb.com/}
     \item Powerpoints da disciplina
 \end{itemize}
 \end{document}
