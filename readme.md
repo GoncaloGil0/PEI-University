@@ -13,7 +13,7 @@ Ano letivo 2021/2022
 - Codigo Xquery
 - XML 
 - Script de Python
-- Relatorio final
+- Relatrio final
 
 
 ## Clonar o repositorio
