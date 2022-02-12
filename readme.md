@@ -1,7 +1,7 @@
 # BaseXtoMongoDB
 
 ![PEI](https://img.shields.io/badge/Faculdade-PEI-green)
-![Nota](https://img.shields.io/badge/Nota%20final-%3F-green)
+![Nota](https://img.shields.io/badge/Nota%20final-15-green)
 ![Lang](https://img.shields.io/github/languages/count/GoncaloGil0/BaseXtoMongoDB)
 
 ## Descrição
