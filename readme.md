@@ -1,4 +1,4 @@
-# BaseXtoMongoDB
+# PEI - Processamento Estruturado de Informação
 
 ![PEI](https://img.shields.io/badge/Faculdade-PEI-green)
 ![Nota](https://img.shields.io/badge/Nota%20final-15-green)
