@@ -18,5 +18,5 @@ Ano letivo 2021/2022
 
 ## Clonar o repositorio
 ``` 
-git clone https://github.com/GoncaloGil0/BaseXtoMongoDB.git
+git clone https://github.com/GoncaloGil0/PEI-University.git
 ```
